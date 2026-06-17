@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Dashboard - Dennis Fengler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar card">
+            <a href="#" class="cv-title" style="position: absolute; top: 15px; left: 15px; z-index: 10;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                CV
+            </a>
+            <div class="profile-section">
+                <div class="profile-pic"></div>
+                <h1>Dennis Fengler</h1>
+                <h2>Senior Business Intelligence Analyst</h2>
+                <p class="summary">41 years · german · married<br>Baden-Baden</p>
+                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                    <button class="download-btn no-print" onclick="window.print()" style="position: static; margin: 0;">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+            
+            <div class="contact-info section-divider">
+                <div class="info-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>dennisfengler@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>0170-6601074</span>
+                </div>
+            </div>
+
+            <div class="kpi-container">
+                <div class="kpi kpi-standard">
+                    <span class="kpi-value">8+</span>
+                    <span class="kpi-label">BI Work Experience</span>
+                </div>
+                <div class="kpi kpi-peony">
+                    <span class="kpi-value">4</span>
+                    <span class="kpi-label">BI maturity level ¹</span>
+                </div>
+            </div>
+
+            <div class="soft-skills section-divider">
+                <h3>Soft Skills</h3>
+                <ul class="tag-list">
+                    <li>Communication & Presentation</li>
+                    <li>Analytical Mindset</li>
+                    <li>Creative yet Organized</li>
+                    <li>Cross-functional Collaboration</li>
+                </ul>
+            </div>
+
+            <div class="languages section-divider">
+                <h3>Languages</h3>
+                <div class="lang-item"><span>German (Native)</span><div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div></div>
+                <div class="lang-item"><span>English (Fluent)</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+                <div class="lang-item"><span>Dutch (Fluent)</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+                <div class="lang-item"><span>French (Basic)</span><div class="bar-bg"><div class="bar-fill" style="width: 30%;"></div></div></div>
+            </div>
+
+            <div class="education section-divider">
+                <h3>Education</h3>
+                <ul class="clean-list small-text">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="list-content">
+                            <strong>Geprüfter Controller (IHK)</strong>
+                            <span>SGD Darmstadt (2025-2026)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="list-content">
+                            <strong>Data Analyst (IHK)</strong>
+                            <span>IHK Schweinfurt (2023) - Note 1,0</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="list-content">
+                            <strong>Int. Hotel Management (B.A)</strong>
+                            <span>Stenden University (2012-2014)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="list-content">
+                            <strong>Industriekaufmann (IHK)</strong>
+                            <span>BA Emsland (2004-2006)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <div class="top-row">
+                <!-- Skill Range (Venn Diagram) -->
+                <div class="card venn-card">
+                    <h3>Skill Range</h3>
+                    <p class="section-subtitle">Bridging the gap between business needs and technical solutions</p>
+                    <div class="venn-diagram-container">
+                        <div class="venn-diagram">
+                            <div class="circle-bg circle-finance-bg"></div>
+                            <div class="circle-bg circle-data-bg"></div>
+                            <div class="venn-circle venn-finance">Finance</div>
+                            <div class="venn-circle venn-data">Data</div>
+                            <div class="venn-intersection">BI</div>
+                        </div>
+                    </div>
+                    <div class="venn-bottom-section">
+                        <div class="white-box usp-box-new">
+                            <div class="usp-title">My USP</div>
+                            <div class="usp-metrics">
+                                <div class="usp-item"><span class="usp-dot dot-finance"></span> Finance Skills <strong>90%</strong></div>
+                                <div class="usp-item"><span class="usp-dot dot-data"></span> Data Skills <strong>90%</strong></div>
+                            </div>
+                        </div>
+                        
+                        <div class="white-box tech-stack-box">
+                            <div class="usp-title">My Tech Stack</div>
+                            <div class="tech-logos">
+                                <span class="tech-fallback">MS Fabric</span>
+                                <span class="tech-fallback">MS Power BI</span>
+                                <span class="tech-fallback">Metabase</span>
+                                <span class="tech-fallback">Google Big Query</span>
+                                <span class="tech-fallback">Amazon Athena</span>
+                                <span class="tech-fallback">Power Apps / Dataverse</span>
+                                <span class="tech-fallback">MS SQL (T-SQL)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Details (Radar Chart) -->
+                <div class="card skill-card">
+                    <h3>Skill Details</h3>
+                    <div class="chart-container-radar" style="height: 450px;">
+                        <canvas id="skillsRadar"></canvas>
+                        <div id="radar-html-labels"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline (Controlling & Data) -->
+            <div class="card full-width">
+                <h3>Berufserfahrung (Controlling & Data Analytics) <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">(inkl. Arbeitszeugnisse)</span></h3>
+                <p class="section-subtitle">8 years of full stack bi-development, operations controlling & data analytics</p>
+                <div class="timeline-gantt">
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>König Metall Group</strong>
+                                <span class="position">Consultant Data Analyst</span>
+                                <span class="location">Gaggenau (DE)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar primary-light" style="left: 77%; width: 6%;">
+                                <span class="gantt-tooltip">Anfang 2025 - Mitte 2025 (Part-time)</span>
+                            </div>
+                            <div class="gantt-bar primary" style="left: 83%; width: 17%;">
+                                <span class="gantt-tooltip">Mitte 2025 - Mitte 2026 (Full-time)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>Workwise GmbH</strong>
+                                <span class="position">Senior BI Analyst</span>
+                                <span class="location">Karlsruhe (DE)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar secondary" style="left: 55%; width: 22%;">
+                                <span class="gantt-tooltip">Anfang 2023 - Anfang 2025</span>
+                            </div>
+                            <div class="gantt-bar secondary-light" style="left: 77%; width: 6%;">
+                                <span class="gantt-tooltip">Anfang 2025 - Mitte 2025 (Part-time)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>Bäckerei Raisch KG</strong>
+                                <span class="position">BI Controller</span>
+                                <span class="location">Calw (DE)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar tertiary" style="left: 39%; width: 22%;">
+                                <span class="gantt-tooltip">Mitte 2021 - Mitte 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>A-ROSA Reederei</strong>
+                                <span class="position">Operations Analyst</span>
+                                <span class="location">Chur (CH)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar quaternary" style="left: 0%; width: 39%;">
+                                <span class="gantt-tooltip">Anfang 2018 - Mitte 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-axis">
+                        <span>2018</span>
+                        <span>2020</span>
+                        <span>2022</span>
+                        <span>2024</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline (Hotel & Tourism) -->
+            <div class="card full-width">
+                <h3>Berufserfahrung (Hotel & Tourismus)</h3>
+                <p class="section-subtitle">Career history prior to 2016 in the hospitality and tourism sector</p>
+                <div class="timeline-gantt">
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>A-ROSA Reederei</strong>
+                                <span class="position">Ass. Hotel Management</span>
+                                <span class="location">Chur (CH)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar tertiary" style="left: 80%; width: 20%;">
+                                <span class="gantt-tooltip">Mitte 2016 - 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>KeDi Hotels</strong>
+                                <span class="position">stellv. Hotelleiter</span>
+                                <span class="location">Papenburg (DE)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar secondary" style="left: 60%; width: 20%;">
+                                <span class="gantt-tooltip">Mitte 2015 - Mitte 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>Travelbird B.V.</strong>
+                                <span class="position">Account Manager</span>
+                                <span class="location">Amsterdam (NL)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar primary" style="left: 40%; width: 20%;">
+                                <span class="gantt-tooltip">Mitte 2014 - Mitte 2015</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-row">
+                        <div class="gantt-left">
+                            <a href="#" class="cert-btn no-print" title="Arbeitszeugnis herunterladen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a>
+                            <div class="gantt-label">
+                                <strong>Burghotel GmbH</strong>
+                                <span class="position">Revenue Manager</span>
+                                <span class="location">Haselünne (DE)</span>
+                            </div>
+                        </div>
+                        <div class="gantt-bar-container">
+                            <div class="gantt-bar quaternary" style="left: 0%; width: 40%;">
+                                <span class="gantt-tooltip">2012 - 2014</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-axis">
+                        <span>2012</span>
+                        <span>2013</span>
+                        <span>2014</span>
+                        <span>2015</span>
+                        <span>2016</span>
+                        <span>2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BI Maturity Level Funnel -->
+            <div class="card full-width page-break-avoid funnel-card">
+                <h3>BI Maturity Level Concept ¹</h3>
+                <p class="section-subtitle">A well-designed data architecture should reach at least maturity level 4 to deliver expected benefits and avoid "yellow excel".</p>
+                <div class="funnel-container">
+                    <div class="funnel-level funnel-5">
+                        <div class="funnel-title"><strong>Level 5</strong><br>Data Driven Predictions</div>
+                        <div class="funnel-desc">Advanced predictive analysis • Big data capabilities • Identifies patterns</div>
+                    </div>
+                    <div class="funnel-level funnel-4">
+                        <div class="funnel-title"><strong>Level 4</strong><br>Self Service Analysis</div>
+                        <div class="funnel-desc">User driven analysis • Explored across dimensions • In depth correlations</div>
+                    </div>
+                    <div class="funnel-level funnel-3">
+                        <div class="funnel-title"><strong>Level 3</strong><br>Management Dashboards</div>
+                        <div class="funnel-desc">Executive level reports • Drillable reports • Insights using trends</div>
+                    </div>
+                    <div class="funnel-level funnel-2">
+                        <div class="funnel-title"><strong>Level 2</strong><br>Operational Reports</div>
+                        <div class="funnel-desc">Data from transactional systems • Reports on "What's happening"</div>
+                    </div>
+                    <div class="funnel-level funnel-1">
+                        <div class="funnel-title"><strong>Level 1</strong><br>Unorganized</div>
+                        <div class="funnel-desc">As needed data reports • Heavy use of localized spreadsheets • Single point of failure</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio (Inside Main Content) -->
+            <div class="card full-width page-break-avoid portfolio-section">
+                <h3 class="print-page-title">Portfolio & Core Concepts</h3>
+                <p class="section-subtitle">A glimpse into my reporting and BI architecture mindset</p>
+                
+                <div class="portfolio-grid-new">
+                    
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image UX/UI</span>
+                            <!-- <img src="uxui.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>UX/UI Design</h4>
+                            <p>Developing Power BI products with maturity-level 4. Creating a true single source of truth in one intuitive software based on one semantic model.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image DWH</span>
+                            <!-- <img src="dwh.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>Data Warehousing</h4>
+                            <p>Lean Medallion architecture using Apache Spark & Microsoft Fabric with T-SQL. Using Lakehouse + SQL endpoint for highly functional analytical warehousing.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image Modeling</span>
+                            <!-- <img src="modeling.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>Data Modeling</h4>
+                            <p>Smart and efficient data modeling allowing smooth navigation and filtering across all dimensions. Unified UX/UI for stakeholders in general analytics.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image KPIs</span>
+                            <!-- <img src="kpis.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>KPI Developing</h4>
+                            <p>Defining precise legal and management requirements with high data consistency. Using Figma to design consistent KPI systems before analytical implementation.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image Apps</span>
+                            <!-- <img src="apps.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>Power Platform Apps</h4>
+                            <p>Combining Power BI and Power Apps for real-time data digitization and process improvement. Writing back to Power BI with Direct Query.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <span>Image Governance</span>
+                            <!-- <img src="governance.jpg"> -->
+                        </div>
+                        <div class="port-content">
+                            <h4>Data Governance</h4>
+                            <p>Establishing clear data ownership, documentation, and security standards to ensure high data quality, transparency, and compliance.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
