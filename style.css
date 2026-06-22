@@ -7,7 +7,7 @@
     --border-color: #D3E4DC; /* Darker Wintergreen border */
     
     /* Chart / Element Colors */
-    --accent-1: #C2DFD2; /* Wintergreen (Base) */
+    --accent-1: #8baea0; /* Darker Wintergreen (Base) */
     --accent-2: #D67185; /* Peony (Pink) */
     --accent-3: #252525; /* Obsidian (Dark) */
     --accent-4: #F4F1EC; /* Porcelain */
@@ -124,18 +124,20 @@ h3 {
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     margin: 1.5rem auto 1rem;
-    background-image: url('profile.jpg'), linear-gradient(135deg, var(--accent-1), var(--accent-2));
-    background-size: cover;
-    background-position: center;
+    background-color: white;
+    background-image: url('profile.jpeg.jpg');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center 20%;
     border: 2px solid var(--border-color);
 }
 
 .profile-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
@@ -383,39 +385,39 @@ h3 {
 }
 
 .circle-finance-bg {
-    background: linear-gradient(to right, rgba(214, 113, 133, 0.4) 30%, rgba(255, 255, 255, 0) 90%);
-    border: 2px solid var(--accent-2);
-    left: 0;
+    background: transparent;
+    border: 3px solid var(--accent-1);
+    box-shadow: 0 0 8px rgba(194, 223, 210, 0.4), inset 0 0 8px rgba(194, 223, 210, 0.4);
+    left: 15px;
     top: 0;
-    box-shadow: 0 0 15px rgba(214, 113, 133, 0.5), inset 0 0 10px rgba(214, 113, 133, 0.3);
 }
 
 .circle-data-bg {
-    background: linear-gradient(to left, rgba(194, 223, 210, 0.6) 30%, rgba(255, 255, 255, 0) 90%);
-    border: 2px solid var(--accent-1);
-    right: 0;
+    background: transparent;
+    border: 3px solid var(--accent-2);
+    box-shadow: 0 0 8px rgba(214, 113, 133, 0.4), inset 0 0 8px rgba(214, 113, 133, 0.4);
+    right: 15px;
     top: 0;
-    box-shadow: 0 0 15px rgba(194, 223, 210, 0.7), inset 0 0 10px rgba(194, 223, 210, 0.5);
 }
 
 .venn-circle {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     font-weight: 700;
-    color: var(--text-main);
-    font-size: 1.1rem;
-    width: 50%;
-    text-align: center;
+    font-size: 0.95rem;
     z-index: 10;
+    white-space: nowrap;
 }
 
 .venn-finance {
-    left: 0;
+    top: 15px;
+    left: -75px;
+    color: var(--accent-1);
 }
 
 .venn-data {
-    right: 0;
+    top: 15px;
+    right: -10px;
+    color: var(--accent-2);
 }
 
 .venn-intersection {
@@ -424,7 +426,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 0.95rem; /* matched font size */
     color: var(--text-main);
     z-index: 3;
 }
@@ -432,6 +434,7 @@ h3 {
 /* Tech Stack & USP Box Layout */
 .venn-bottom-section {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -444,11 +447,11 @@ h3 {
 }
 
 .usp-box-new {
-    flex: 0.8;
+    flex: none;
 }
 
 .tech-stack-box {
-    flex: 1.2;
+    flex: none;
 }
 
 .usp-title {
@@ -787,9 +790,32 @@ h3 {
     object-fit: cover;
 }
 
+.tool-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border: 2px solid white;
+    z-index: 5;
+}
+
+.tool-badge svg {
+    width: 18px;
+    height: 18px;
+}
+
 .port-content {
     padding: 1.2rem;
+    padding-bottom: 2.5rem;
     flex-grow: 1;
+    position: relative;
 }
 
 .port-content h4 {
@@ -894,8 +920,8 @@ h3 {
         margin: 0;
     }
     .profile-pic {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         margin: 1rem auto 0.5rem;
     }
     .cv-title {

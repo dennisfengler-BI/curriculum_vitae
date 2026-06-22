@@ -12,11 +12,11 @@
     <div class="dashboard-container">
         <!-- Sidebar -->
         <aside class="sidebar card">
-            <a href="#" class="cv-title" style="position: absolute; top: 15px; left: 15px; z-index: 10;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                CV
-            </a>
             <div class="profile-section">
+                <a href="#" class="cv-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    CV
+                </a>
                 <div class="profile-pic"></div>
                 <h1>Dennis Fengler</h1>
                 <h2>Senior Business Intelligence Analyst</h2>
@@ -111,34 +111,33 @@
                 <!-- Skill Range (Venn Diagram) -->
                 <div class="card venn-card">
                     <h3>Skill Range</h3>
-                    <p class="section-subtitle">Bridging the gap between business needs and technical solutions</p>
+                    <p class="section-subtitle">Bridging the gap between controlling, finance and data.</p>
                     <div class="venn-diagram-container">
                         <div class="venn-diagram">
                             <div class="circle-bg circle-finance-bg"></div>
                             <div class="circle-bg circle-data-bg"></div>
-                            <div class="venn-circle venn-finance">Finance</div>
+                            <div class="venn-circle venn-finance">Controlling</div>
                             <div class="venn-circle venn-data">Data</div>
                             <div class="venn-intersection">BI</div>
                         </div>
                     </div>
                     <div class="venn-bottom-section">
                         <div class="white-box usp-box-new">
-                            <div class="usp-title">My USP</div>
+                            <div class="usp-title">my USP</div>
                             <div class="usp-metrics">
-                                <div class="usp-item"><span class="usp-dot dot-finance"></span> Finance Skills <strong>90%</strong></div>
-                                <div class="usp-item"><span class="usp-dot dot-data"></span> Data Skills <strong>90%</strong></div>
+                                <div class="usp-item"><span class="usp-dot dot-finance"></span> Controlling & Finance Skills <strong>90%</strong></div>
+                                <div class="usp-item"><span class="usp-dot dot-data"></span> Data & Analytics Skills <strong>90%</strong></div>
                             </div>
                         </div>
                         
                         <div class="white-box tech-stack-box">
-                            <div class="usp-title">My Tech Stack</div>
+                            <div class="usp-title">my Tech Stack</div>
                             <div class="tech-logos">
                                 <span class="tech-fallback">MS Fabric</span>
                                 <span class="tech-fallback">MS Power BI</span>
                                 <span class="tech-fallback">Metabase</span>
                                 <span class="tech-fallback">Google Big Query</span>
                                 <span class="tech-fallback">Amazon Athena</span>
-                                <span class="tech-fallback">Power Apps / Dataverse</span>
                                 <span class="tech-fallback">MS SQL (T-SQL)</span>
                             </div>
                         </div>
@@ -349,67 +348,84 @@
                     
                     <div class="portfolio-card-img">
                         <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image UX/UI</span>
-                            <!-- <img src="uxui.jpg"> -->
+                            <img src="koenig_ux.png" alt="UX/UI Design Dashboard">
                         </div>
                         <div class="port-content">
                             <h4>UX/UI Design</h4>
-                            <p>Developing Power BI products with maturity-level 4. Creating a true single source of truth in one intuitive software based on one semantic model.</p>
+                            <p>I try to deliver more than just developing dashboards. To me, developing Power BI products with maturity-level 4 means creating a true single source of truth in one intuitive controlling software based on one semantic model (one single .pbix-File).<br>
+                            This makes maintenance exponentially easier and usability for all users across the company a calming rejoice.</p>
                         </div>
                     </div>
 
                     <div class="portfolio-card-img">
                         <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image DWH</span>
-                            <!-- <img src="dwh.jpg"> -->
-                        </div>
-                        <div class="port-content">
-                            <h4>Data Warehousing</h4>
-                            <p>Lean Medallion architecture using Apache Spark & Microsoft Fabric with T-SQL. Using Lakehouse + SQL endpoint for highly functional analytical warehousing.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card-img">
-                        <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image Modeling</span>
-                            <!-- <img src="modeling.jpg"> -->
-                        </div>
-                        <div class="port-content">
-                            <h4>Data Modeling</h4>
-                            <p>Smart and efficient data modeling allowing smooth navigation and filtering across all dimensions. Unified UX/UI for stakeholders in general analytics.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-card-img">
-                        <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image KPIs</span>
-                            <!-- <img src="kpis.jpg"> -->
+                            <img src="company_lifecycle_stages.png" alt="Company Lifecycle">
                         </div>
                         <div class="port-content">
                             <h4>KPI Developing</h4>
-                            <p>Defining precise legal and management requirements with high data consistency. Using Figma to design consistent KPI systems before analytical implementation.</p>
+                            <p>As a controller this always has been the core of my profession.<br><br>
+                            Metrics are determining the entire process of building an analytical data architecture, so it is crucial to create a KPI-system first.<br><br>
+                            This BI process often got underestimated by analysts without strong background in finance and controlling. It is necessary to precisely define stakeholder requirements by maintaining data consistency at the same time.</p>
+                            <div class="tool-badge" title="Designed in Figma">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="width:20px; height:20px; object-fit:contain; position:static;" alt="Figma">
+                            </div>
                         </div>
                     </div>
 
                     <div class="portfolio-card-img">
                         <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image Apps</span>
-                            <!-- <img src="apps.jpg"> -->
+                            <img src="kpi_dev_figma.png" alt="KPI Developing">
                         </div>
                         <div class="port-content">
-                            <h4>Power Platform Apps</h4>
-                            <p>Combining Power BI and Power Apps for real-time data digitization and process improvement. Writing back to Power BI with Direct Query.</p>
+                            <h4>Process Mining</h4>
+                            <p>Process Mining bridges the gap between data analytics and business operations. I prefer to use Figma to visually map and mine these workflows, acting as the crucial preliminary stage before developing any KPIs.<br><br>
+                            This allows us to identify bottlenecks, inefficiencies, and deviations from the ideal path, enabling data-driven process optimization and a deeper understanding of operational reality.</p>
+                            <div class="tool-badge" title="Designed in Figma">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="width:20px; height:20px; object-fit:contain; position:static;" alt="Figma">
+                            </div>
                         </div>
                     </div>
 
                     <div class="portfolio-card-img">
                         <div class="port-img-placeholder" onclick="openModal(this)">
-                            <span>Image Governance</span>
-                            <!-- <img src="governance.jpg"> -->
+                            <img src="cohort analysis.png" alt="Cohort Analysis Data Warehousing" style="object-position: left; object-fit: contain; background: white;">
                         </div>
                         <div class="port-content">
-                            <h4>Data Governance</h4>
+                            <h4>Data Warehousing</h4>
+                            <p>Lean and functional data modeling asks for tables of a high information density.<br>
+                            For this there is no better approach than the medallion architecture from Apache Spark, which is now adopted by the notebook functionality of Microsoft Fabric with T-SQL, making it the perfect tool for analytical warehousing.</p>
+                            <br>
+                            <p><i>Picture: customer cohort analysis with [cross-sectional] follow up analysis</i></p>
+                            <div class="tool-badge" title="Microsoft Fabric">
+                                <img src="fabric.png" style="width:100%; height:100%; object-fit:cover; border-radius:50%; position:static;" alt="Fabric">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <img src="ER-Modell.png" alt="Data Modeling ER Diagram" style="object-position: top;">
+                        </div>
+                        <div class="port-content">
+                            <h4>Data Modeling</h4>
+                            <p>Being able to have a single source of truth in one semantic model means creating a smart and efficient data model which allows a smooth navigation and filtering ability for the user and stakeholder.<br>
+                            This can only be obtained by a smart data warehousing, which can not be viewed apart from data modeling on BI maturity level 4.</p>
+                            <br>
+                            <p><i>Picture: for the user it is possible to filter the entire dashboard model by all dimensions, like customer or item, in the very same UX/UI they use for general analytics.</i></p>
+                            <div class="tool-badge" title="Built in Power BI">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" style="width:20px; height:20px; object-fit:contain; position:static;" alt="Power BI">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card-img">
+                        <div class="port-img-placeholder" onclick="openModal(this)">
+                            <img src="Screenshot 2026-06-23 004915.png" alt="Finance Controlling Tipico Dashboard">
+                        </div>
+                        <div class="port-content">
+                            <h4>Finance Controlling</h4>
                             <p>Establishing clear data ownership, documentation, and security standards to ensure high data quality, transparency, and compliance.</p>
+                            <img src="Tipico_Logo.svg.png" title="Tipico" style="position: absolute; bottom: 10px; right: 10px; height: 20px; object-fit: contain; z-index: 5;" alt="Tipico Logo">
                         </div>
                     </div>
                     

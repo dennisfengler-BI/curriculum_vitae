@@ -59,18 +59,16 @@ new Chart(radarCtx, {
     type: 'radar',
     data: {
         labels: [
-            ['ETL & Spark SQL', 'Subpoint 1', 'Subpoint 2'], 
-            ['DAX & Data Modeling', 'Subpoint 1', 'Subpoint 2'], 
-            ['Power Apps & Intranet', 'Subpoint 1', 'Subpoint 2'], 
-            ['T-SQL', 'Subpoint 1', 'Subpoint 2'], 
-            ['Management Reporting', 'Subpoint 1', 'Subpoint 2'], 
-            ['Cost Accounting', 'Subpoint 1', 'Subpoint 2'], 
-            ['Regulatory Compliance', 'Subpoint 1', 'Subpoint 2'], 
-            ['Accounting', 'Subpoint 1', 'Subpoint 2']
+            ['End 2 End Data Management', 'Data Transformation & Modeling [SQL, DAX]', 'ETL, Data Warehousing [SQL]'], 
+            ['Ownership-Mentalität', 'Souveräne Kommunikation', 'Change Management'], 
+            ['Finance & Accounting', 'Balance Sheet Analysis', 'Income Statement & Cash Flow Analysis'], 
+            ['Cost Accounting', 'Cost Center Analysis', 'Product & Project Cost Calculation'], 
+            ['Management Reporting', 'Budgeting, Forecasting & Variance Analysis', 'Operations & Strategic Controlling'], 
+            ['Data Visualization Engineering', 'UX/UI', 'Report Design & Storytelling']
         ],
         datasets: [{
             label: 'Proficiency Level',
-            data: [95, 100, 80, 85, 95, 85, 80, 90],
+            data: [4, 4, 3, 4, 4, 5],
             backgroundColor: 'rgba(194, 223, 210, 0.3)', // Wintergreen with opacity
             borderColor: colors.accent1, // Wintergreen
             pointBackgroundColor: colors.accent2, // Peony
@@ -85,13 +83,15 @@ new Chart(radarCtx, {
         maintainAspectRatio: false,
         scales: {
             r: {
+                min: 0,
+                max: 5,
                 angleLines: { color: colors.grid },
                 grid: { color: colors.grid },
                 pointLabels: {
                     color: 'transparent', /* Hide default canvas text to use HTML overlay */
                     font: { size: 11, weight: '600' }
                 },
-                ticks: { display: false, min: 0, max: 100 }
+                ticks: { display: false, stepSize: 1, count: 6 }
             }
         },
         plugins: {
